@@ -24,4 +24,4 @@ To train, evaluate, and generate samples:
 python pixelvae.py
 ```
 
-By default, this runs on real-valued MNIST. You can pecify different datasets or model settings within `pixelvae.py`.
+By default, this runs on real-valued MNIST. You can specify different datasets or model settings within `pixelvae.py`.
