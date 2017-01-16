@@ -277,7 +277,7 @@ def Decoder_no_blind(latents, images):
     X_v, X_h = next_stacks(images_with_latent, images_with_latent, N_CHANNELS + DIM_1, "Dec.PixInput", filter_size = 7, hstack = "hstack_a", residual = False)
 
     for i in xrange(PIXEL_CNN_LAYERS):
-        X_v, X_h = next_stacks(X_v, X_h,  DIM_PIX, "Dec.Pix"+str(i+1), filter_size = 3)
+        X_v, X_h = next_stacks(X_v, X_h,  DIM_PIX, "Dec.Pix"+str(i+1), filter_size = PIXEL_CNN_FILTER_SIZE)
 
 
     output = PixCNNGate(lib.ops.conv2d.Conv2D('Dec.PixOut1', input_dim=DIM_PIX, output_dim=2*DIM_1, filter_size=1, inputs=X_h))
