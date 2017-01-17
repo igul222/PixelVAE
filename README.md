@@ -2,7 +2,7 @@
 
 Code for the models in [PixelVAE: A Latent Variable Model for Natural Images](https://arxiv.org/abs/1611.05013)
 
-## MNIST
+## Binarized MNIST
 
 To train:
 
@@ -16,7 +16,7 @@ To evaluate, take the weights of the model with best validation score from the a
 python models/mnist_pixelvae_evaluate.py -L 12 -fs 5 -algo cond_z_bias -dpx 16 -ldim 16 -w path/to/weights.pkl
 ```
 
-## Other datasets
+## Real-valued MNIST, LSUN Bedrooms, 64x64 ImageNet, and other datasets
 
 To train, evaluate, and generate samples:
 
