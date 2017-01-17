@@ -16,7 +16,7 @@ To evaluate, take the weights of the model with best validation score from the a
 python models/mnist_pixelvae_evaluate.py -L 12 -fs 5 -algo cond_z_bias -dpx 16 -ldim 16 -w path/to/weights.pkl
 ```
 
-## Real-valued MNIST, LSUN Bedrooms, 64x64 ImageNet, and other datasets
+## Real-valued MNIST, LSUN Bedrooms, 64x64 ImageNet
 
 To train, evaluate, and generate samples:
 
